@@ -89,6 +89,7 @@ class Blockchain:
         # check if chain is valid and keep track of longest chain
         # set own chain to longest chain
         for node in network:
+            print(f'http://{node}/get_chain')
             response = requests.get(f'http://{node}/get_chain')
             if response.status_code == 200:
                 length = response.json()['length']
