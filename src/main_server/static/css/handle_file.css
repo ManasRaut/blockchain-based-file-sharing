@@ -2,6 +2,19 @@ html,body{
     height: 100%;
 }
 
+.modalContainer {
+position: fixed;
+top: 0px;
+height: 100%;
+left: 0px;
+width: 100%;
+background-color: #00000046;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 5000;
+}
+
 .grandParentContaniner{
     display:table; 
     height:100%; 
@@ -16,10 +29,8 @@ html,body{
 .file-frm{
     border: 1px solid #14c871;
     border-radius: 10px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 32px;
+    background-color: white;
     font-family: "Open Sans", sans-serif;
     max-width: 500px;
     max-height: 700px;

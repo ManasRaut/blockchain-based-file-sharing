@@ -59,16 +59,21 @@
 .counts {
   padding-top: 0;
   padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.counts .counters span {
+#fileCounter {
   font-size: 48px;
   display: block;
   color: #16df7e;
   font-weight: 700;
+  text-align: center;
 }
 
-.counts .counters p {
+.counts .container {
+  width: fit-content;
   padding: 0;
   margin: 0 0 20px 0;
   font-family: "Raleway", sans-serif;
@@ -76,6 +81,15 @@
   font-weight: 600;
 }
 
+#block_list {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+}
+
+#block_list .card {
+  margin: 4px;
+}
 
 /*----------------------------------------------------------------
 # Design to show the message1 and message2
